@@ -1,30 +1,691 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The portfolio of Grant Brotan — selected creative work and ways to get in touch.">
-  <meta name="theme-color" content="#f7f6f2">
-  <title>Grant Brotan</title>
-  <style>
-    :root{--paper:#f7f6f2;--ink:#1e2421;--muted:#68716b;--green:#c8e36b;--line:#d9ddd5;--max:1120px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 Arial,Helvetica,sans-serif}a{color:inherit;text-underline-offset:4px}a:hover{color:#536916}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}.top{border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-size:1rem;font-weight:700;text-decoration:none;letter-spacing:.04em}nav{display:flex;gap:27px}nav a{text-decoration:none;color:var(--muted);font-size:.9rem}.hero{padding:105px 0 96px;display:grid;grid-template-columns:1fr;gap:60px;align-items:center}.kicker{text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;font-weight:700;color:#687d26}.hero h1{font-size:clamp(3.5rem,8.5vw,7.6rem);letter-spacing:-.085em;line-height:.88;margin:23px 0 28px;max-width:800px}.hero p{font-size:1.18rem;max-width:620px;color:var(--muted)}.links{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.pill{display:inline-block;padding:11px 17px;border:1px solid var(--ink);border-radius:99px;text-decoration:none;font-size:.9rem;font-weight:700}.pill.primary{background:var(--green);border-color:var(--green)}.portrait{aspect-ratio:4/5;border-radius:48% 48% 8px 8px;background:linear-gradient(150deg,#d9e1ce,#abc082 52%,#546549);display:grid;place-items:center;font-size:clamp(4rem,9vw,7rem);font-weight:700;letter-spacing:-.1em;color:#f7f6f2}.section{padding:76px 0;border-top:1px solid var(--line)}.heading{display:flex;justify-content:space-between;align-items:baseline;gap:25px;margin-bottom:30px}.heading h2{margin:0;font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.06em}.heading p{color:var(--muted);margin:0}.about{display:grid;grid-template-columns:1fr 1fr;gap:70px}.about p{margin-top:0;color:var(--muted)}.skills{display:flex;align-content:start;flex-wrap:wrap;gap:9px}.skill{border:1px solid var(--line);padding:7px 12px;border-radius:99px;color:var(--muted);font-size:.86rem}.projects{display:grid;grid-template-columns:1fr 1fr;gap:20px}.project{background:#eceee7;border-radius:7px;overflow:hidden}.art{aspect-ratio:1.55;display:grid;place-items:center;background:#becda2;color:#fff;font-size:clamp(2.4rem,6vw,5.5rem);font-weight:700;letter-spacing:-.08em}.art img{width:100%;height:100%;object-fit:contain;padding:20px}.project-copy{padding:20px 22px 23px}.project-copy h3{margin:0 0 6px;font-size:1.2rem}.project-title{text-decoration:none}.project-title:hover{text-decoration:underline;text-decoration-thickness:2px}.project-copy p{margin:0 0 12px;color:var(--muted);font-size:.94rem}.project-copy a{font-weight:700;font-size:.9rem}.contact{padding:42px;background:var(--green);border-radius:8px}.contact h2{font-size:clamp(2.5rem,6vw,5rem);letter-spacing:-.075em;line-height:.98;margin:18px 0}.contact p{max-width:570px}.footer{padding:28px 0 40px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:.88rem}@media(max-width:720px){.wrap{width:min(var(--max),calc(100% - 32px))}.nav{height:auto;min-height:72px;align-items:flex-start;flex-direction:column;padding:17px 0}nav{gap:16px;flex-wrap:wrap}.hero{padding:70px 0;grid-template-columns:1fr;gap:32px}.portrait{max-width:310px;aspect-ratio:1.1}.about,.projects{grid-template-columns:1fr;gap:20px}.section{padding:56px 0}.heading{align-items:flex-start;flex-direction:column;gap:4px}.contact{padding:28px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Grant Brotan, multimedia specialist. Video editing, studio production and digital content for simpliHŌM Real Estate, Nashville Safe House, Aquarium Co-Op and Keeping Fish Simple.">
+<meta name="theme-color" content="#f7f6f2">
+<title>Grant Brotan · Multimedia Specialist</title>
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://i.ytimg.com">
+<link rel="preconnect" href="https://www.youtube-nocookie.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400..700&display=swap">
+<style>
+/* Layout: one continuous page. Words sit on paper; when the work scrolls in, the
+   whole page dims to a neutral screening room so the footage is the brightest,
+   most saturated thing on screen. A fixed strip maps the page like clips on a timeline. */
+@property --bg     { syntax: '<color>'; inherits: true; initial-value: #f7f6f2 }
+@property --fg     { syntax: '<color>'; inherits: true; initial-value: #1e2421 }
+@property --fg-2   { syntax: '<color>'; inherits: true; initial-value: #5c655f }
+@property --rule   { syntax: '<color>'; inherits: true; initial-value: #d9ddd5 }
+@property --raise  { syntax: '<color>'; inherits: true; initial-value: #eceee7 }
+@property --mark   { syntax: '<color>'; inherits: true; initial-value: #4f6414 }
+
+:root {
+  /* Lights up: paper and green-black ink (Grant's existing identity) */
+  --bg: #f7f6f2;  --fg: #1e2421;  --fg-2: #5c655f;
+  --rule: #d9ddd5; --raise: #eceee7; --mark: #4f6414;
+  /* Constant in both states */
+  --lime: #c8e36b; --ink: #1e2421;
+
+  --font-display: 'Bricolage Grotesque', 'Arial Narrow', Arial, sans-serif;
+  --font-body: 'Instrument Sans', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+  --font-mono: 'DM Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  --wrap: 1240px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --top: 78px;
+
+  color-scheme: light;
+  transition: --bg .7s ease, --fg .7s ease, --fg-2 .7s ease, --rule .7s ease, --raise .7s ease, --mark .7s ease;
+}
+/* Lights down: a neutral dark with the same slight green bias as the ink */
+:root[data-lights="down"] {
+  --bg: #111513;  --fg: #eef0e8;  --fg-2: #9ea8a0;
+  --rule: #2b322e; --raise: #1b201d; --mark: #c8e36b;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box }
+html { scroll-behavior: smooth; scroll-padding-top: 36px; -webkit-text-size-adjust: 100% }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 400 1.0625rem/1.6 var(--font-body); overflow-x: hidden }
+img { max-width: 100%; display: block }
+a { color: inherit; text-underline-offset: 4px }
+h1, h2, h3, p, ul { margin: 0 }
+ul { padding: 0; list-style: none }
+button { font: inherit; color: inherit }
+:focus-visible { outline: 2px solid var(--mark); outline-offset: 3px; border-radius: 4px }
+
+.wrap { width: 100%; max-width: var(--wrap); margin-inline: auto; padding-inline: var(--gutter) }
+.kicker { font: 500 .75rem/1.3 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--mark) }
+
+.btn { display: inline-flex; align-items: center; gap: .45em; padding: .68em 1.15em; border: 1px solid var(--fg); border-radius: 999px; background: transparent; color: var(--fg); font-weight: 600; font-size: .92rem; line-height: 1.2; text-decoration: none; cursor: pointer }
+.btn:hover { background: var(--fg); color: var(--bg) }
+.btn-primary { background: var(--lime); border-color: var(--lime); color: var(--ink) }
+.btn-primary:hover { background: var(--ink); border-color: var(--ink); color: var(--lime) }
+
+/* ---------- Fixed header + timeline strip ---------- */
+.top { position: fixed; inset: 0 0 auto 0; z-index: 20; background: var(--bg); background: color-mix(in srgb, var(--bg) 94%, transparent); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border-bottom: 1px solid var(--rule) }
+.top-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 50px }
+.brand { font: 700 .95rem/1 var(--font-body); letter-spacing: .08em; text-decoration: none; white-space: nowrap }
+.top-links { display: flex; align-items: center; gap: clamp(12px, 2.5vw, 24px); font-size: .9rem }
+.top-links a { text-decoration: none; color: var(--fg-2) }
+.top-links a:hover { color: var(--fg) }
+.top-links .top-resume { color: var(--fg); font-weight: 600 }
+
+.strip-inner { position: relative; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 4px; padding-bottom: 9px }
+.seg { display: block; min-height: 18px; padding-top: 7px; border-top: 3px solid var(--rule); color: var(--fg-2); font: 400 .66rem/1 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; text-decoration: none; white-space: nowrap }
+.seg span { display: none }
+.seg:hover { color: var(--fg); border-top-color: var(--fg-2) }
+.seg.seen { border-top-color: var(--fg-2) }
+.seg[aria-current="true"] { color: var(--fg); border-top-color: var(--fg) }
+.playhead { position: absolute; top: -4px; left: calc(var(--p, 0) * 100%); width: 2px; height: 11px; margin-left: -1px; background: var(--mark); pointer-events: none }
+.playhead::before { content: ""; position: absolute; top: -3px; left: -4px; border: 5px solid transparent; border-top-color: var(--mark); border-bottom: 0 }
+html:not(.js) .playhead { display: none }
+@media (min-width: 900px) { .seg span { display: inline } }
+
+/* ---------- Intro ---------- */
+.hero { padding-block: calc(var(--top) + clamp(36px, 7vw, 84px)) clamp(48px, 7vw, 88px) }
+.hero-grid { display: grid; gap: clamp(36px, 5vw, 72px); align-items: end }
+.hero-main { display: grid; gap: 22px; justify-items: start; min-width: 0 }
+.hero h1 { font: 800 clamp(3rem, 8.4vw, 6.6rem)/.9 var(--font-display); letter-spacing: -.045em; text-wrap: balance }
+.lede { max-width: 34em; font-size: clamp(1.05rem, 1.5vw, 1.2rem); color: var(--fg-2) }
+.skills { display: flex; flex-wrap: wrap; gap: 8px }
+.skills li { padding: .32em .8em; border: 1px solid var(--rule); border-radius: 999px; font-size: .84rem; color: var(--fg-2) }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; padding-top: 6px }
+
+.index { min-width: 0 }
+.index-label { padding-bottom: 12px; font: 400 .72rem/1.3 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--fg-2) }
+.index li { border-top: 1px solid var(--rule) }
+.index li:last-child { border-bottom: 1px solid var(--rule) }
+.index a { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; align-items: center; gap: 14px; padding: 12px 4px; text-decoration: none }
+.index img { width: 44px; height: 44px; border-radius: 8px; border: 1px solid var(--rule) }
+.index-name { display: block; font: 700 1.08rem/1.2 var(--font-display); letter-spacing: -.01em }
+.index-role { display: block; font-size: .86rem; color: var(--fg-2) }
+.index-count { font: 400 .74rem/1.2 var(--font-mono); letter-spacing: .06em; color: var(--fg-2); text-align: right; white-space: nowrap }
+.index a:hover .index-name { text-decoration: underline; text-decoration-thickness: 2px }
+.index a:hover .index-count { color: var(--mark) }
+@media (min-width: 960px) { .hero-grid { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr) } }
+
+/* ---------- Client sections ---------- */
+.client { padding-block: clamp(52px, 8vw, 104px); border-top: 1px solid var(--rule) }
+.client-inner { display: grid; gap: clamp(24px, 3.5vw, 40px) }
+.client-head { display: grid; gap: 18px clamp(28px, 5vw, 72px); align-items: end }
+.client-id { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 16px; align-items: center }
+.client-id img { width: 60px; height: 60px; border-radius: 10px; border: 1px solid var(--rule) }
+.client h2 { padding-top: 4px; font: 700 clamp(2rem, 4.8vw, 3.5rem)/1 var(--font-display); letter-spacing: -.035em; text-wrap: balance }
+.client-say { display: grid; gap: 14px; min-width: 0 }
+.client-blurb { max-width: 38em; color: var(--fg-2) }
+.stat { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px }
+.stat b { font: 800 clamp(1.8rem, 3.4vw, 2.5rem)/1 var(--font-display); letter-spacing: -.03em; color: var(--mark) }
+.stat span { font: 400 .78rem/1.4 var(--font-mono); letter-spacing: .04em; color: var(--fg-2) }
+@media (min-width: 960px) { .client-head { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr) } }
+
+/* Viewer on the left, queue on the right */
+.deck { display: grid; gap: 18px; min-width: 0 }
+.stage { display: grid; gap: 12px; min-width: 0 }
+.screen { position: relative; aspect-ratio: 16 / 9; max-width: 100%; border-radius: 10px; overflow: hidden; background: #000 }
+.poster, .screen iframe { position: absolute; inset: 0; width: 100%; height: 100% }
+.poster img { width: 100%; height: 100%; object-fit: cover }
+.play { position: absolute; left: 50%; top: 50%; width: clamp(60px, 9vw, 88px); aspect-ratio: 1; margin: 0; translate: -50% -50%; display: grid; place-items: center; border-radius: 50%; background: var(--lime); color: var(--ink); box-shadow: 0 6px 30px rgb(0 0 0 / .35); transition: scale .2s ease }
+.play svg { width: 42%; height: 42%; margin-left: 6% }
+.poster:hover .play { scale: 1.07 }
+.screen iframe { border: 0; opacity: 0; pointer-events: none; transition: opacity .3s ease }
+.screen iframe.ready { opacity: 1; pointer-events: auto }
+
+.now { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 20px }
+.now-text { display: grid; gap: 2px; min-width: 0; flex: 1 1 16em }
+.now-title { display: flex; align-items: baseline; gap: 12px; font: 700 1.14rem/1.25 var(--font-display); letter-spacing: -.01em }
+.now-count { flex: none; font: 400 .74rem/1 var(--font-mono); letter-spacing: .08em; color: var(--mark); font-variant-numeric: tabular-nums }
+.now-note { font-size: .92rem; color: var(--fg-2) }
+.now-actions { display: flex; gap: 8px }
+.ctl { display: inline-grid; place-items: center; min-width: 40px; height: 40px; padding: 0 12px; border: 1px solid var(--rule); border-radius: 999px; background: transparent; color: var(--fg); font-size: .86rem; font-weight: 600; text-decoration: none; cursor: pointer }
+.ctl:hover { border-color: var(--fg) }
+html:not(.js) .ctl[data-step] { display: none }
+
+.rail-inner { display: grid; gap: 10px }
+.rail-label { font: 400 .72rem/1.3 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--fg-2) }
+.rail-foot { font-size: .86rem; color: var(--fg-2) }
+.rail-foot a { color: var(--fg); font-weight: 600 }
+.rail-foot small { display: block; padding-top: 2px; font: 400 .7rem/1.4 var(--font-mono); letter-spacing: .04em }
+
+.queue { display: flex; gap: 10px; margin-inline: calc(var(--gutter) * -1); padding: 2px var(--gutter) 8px; overflow-x: auto; scroll-snap-type: x proximity; scroll-padding-inline: var(--gutter); scrollbar-width: thin }
+.queue li { flex: 0 0 min(64vw, 230px); scroll-snap-align: start }
+.clip { display: grid; gap: 8px; height: 100%; align-content: start; padding: 6px; border-radius: 10px; text-decoration: none }
+.clip-thumb { aspect-ratio: 16 / 9; width: 100%; border-radius: 6px; overflow: hidden; background: var(--raise); outline: 2px solid transparent; outline-offset: -2px }
+.clip-thumb img { width: 100%; height: 100%; object-fit: cover }
+.clip-text { display: grid; gap: 3px; align-content: start; min-width: 0; padding: 0 2px 2px }
+.clip-title { font-size: .9rem; font-weight: 600; line-height: 1.3; color: var(--fg-2) }
+.clip-sub { font: 400 .7rem/1.3 var(--font-mono); letter-spacing: .04em; color: var(--fg-2); font-variant-numeric: tabular-nums }
+.clip:hover { background: var(--raise) }
+.clip:hover .clip-title { color: var(--fg) }
+.clip[aria-current="true"] { background: var(--raise) }
+.clip[aria-current="true"] .clip-title { color: var(--fg) }
+.clip[aria-current="true"] .clip-thumb { outline-color: var(--mark) }
+
+@media (min-width: 960px) {
+  .deck { grid-template-columns: minmax(0, 1fr) clamp(300px, 27vw, 348px); gap: 24px; align-items: start }
+  .rail { position: relative; align-self: stretch; min-height: 280px }
+  .rail-inner { position: absolute; inset: 0; grid-template-rows: auto minmax(0, 1fr) auto }
+  .queue { display: block; margin: 0 -6px 0 0; padding: 0 6px 0 0; overflow: hidden auto; scroll-snap-type: none }
+  .queue li + li { margin-top: 2px }
+  .queue.more { -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 44px), transparent); mask-image: linear-gradient(to bottom, #000 calc(100% - 44px), transparent) }
+  .clip { grid-template-columns: 112px minmax(0, 1fr); gap: 12px; align-items: start; height: auto }
+}
+
+/* Safe House website piece */
+.extra { display: grid; gap: 22px clamp(28px, 5vw, 72px); align-items: center; padding-top: clamp(20px, 3vw, 36px); margin-top: clamp(8px, 2vw, 20px); border-top: 1px solid var(--rule) }
+.extra-copy { display: grid; gap: 12px; justify-items: start; min-width: 0 }
+.extra h3 { font: 700 clamp(1.5rem, 3vw, 2.1rem)/1.05 var(--font-display); letter-spacing: -.03em }
+.extra p { max-width: 32em; color: var(--fg-2) }
+.browser { display: block; min-width: 0; border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; background: var(--raise); text-decoration: none }
+.browser-bar { display: flex; align-items: center; gap: 6px; padding: 9px 12px; font: 400 .72rem/1 var(--font-mono); letter-spacing: .04em; color: var(--fg-2) }
+.browser-bar i { width: 9px; height: 9px; border-radius: 50%; background: var(--rule) }
+.browser-bar span { padding-left: 8px }
+.browser-view { display: block; aspect-ratio: 16 / 10; overflow: hidden }
+.browser-view img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; transition: object-position 1.2s ease }
+.browser-hint { display: none; margin-left: auto }
+@media (min-width: 960px) { .extra { grid-template-columns: minmax(0, 4fr) minmax(0, 7fr) } }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .browser:hover img, .browser:focus-visible img { object-position: 50% 100%; transition: object-position 18s linear }
+  .browser-hint { display: block; font: 400 .72rem/1.4 var(--font-mono); letter-spacing: .04em }
+}
+
+/* ---------- Contact ---------- */
+.contact { padding-block: clamp(52px, 8vw, 104px) 28px; border-top: 1px solid var(--rule) }
+.contact-card { --fg: #1e2421; --fg-2: #3b4a14; --rule: #1e2421; --mark: #1e2421; --bg: #c8e36b; display: grid; gap: 20px; justify-items: start; padding: clamp(26px, 5vw, 60px); border-radius: 12px; background: var(--lime); color: var(--fg) }
+.contact h2 { font: 800 clamp(2.8rem, 8vw, 6rem)/.92 var(--font-display); letter-spacing: -.045em }
+.mail { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px }
+.mail-addr { font: 700 clamp(1.25rem, 3.4vw, 2rem)/1.2 var(--font-display); letter-spacing: -.02em; overflow-wrap: anywhere; user-select: all }
+.contact-links { display: flex; flex-wrap: wrap; gap: 10px }
+.footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding-block: 24px 40px; font-size: .86rem; color: var(--fg-2) }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto }
+  :root { transition: none }
+  .play, .screen iframe { transition: none }
+}
+</style>
 </head>
 <body>
-  <header class="top"><div class="wrap nav"><a class="brand" href="#home">GRANT BROTAN</a><nav aria-label="Main navigation"><a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact</a><a href="assets/Grant-Brotan-Resume-2026.pdf" target="_blank" rel="noopener noreferrer">Resume</a></nav></div></header>
-  <main id="home">
-    <div class="wrap hero"><div><div class="kicker">Multimedia Specialist</div><h1>Making ideas<br>into reality.</h1><div class="links"><a class="pill primary" href="#work">Explore Recent Work ↓</a><a class="pill" href="mailto:gbrotan@gmail.com">Say Hello</a></div></div></div>
-    <section class="section" id="about"><div class="wrap"><div class="heading"><h2>A bit about me</h2></div><div class="about"><div><p> I'm a multimedia specialist with 10 years experience in video editing, studio production, 3D animation, marketing, podcast production and digital content management. </p></div><div class="skills" aria-label="Skills and specialties"><span class="skill">Video Editing</span><span class="skill">Adobe Creative Suite</span><span class="skill">Shopify</span><span class="skill">Marketing</span>
-      </div></div></div></section>
-    <section class="section" id="work"><div class="wrap"><div class="heading"><h2>Recent Work</h2></div><div class="projects">
-      <article class="project"><div class="art"><a href="simplihom.html" aria-label="View simpliHŌM Real Estate project"><img src="images/SH-logo.jpg" alt="simpliHŌM Real Estate"></a></div><div class="project-copy"><h3><a class="View Work" href="simplihom.html">simpliHŌM Real Estate</a></h3><p>Marketing Manager</p><a href="simplihom.html">View ↗</a></div></article>
-      <article class="project"><div class="art"><a href="nashville-safe-house.html" aria-label="View Nashville Safe House project"><img src="images/NSH-Logo.jpg" alt="Nashville Safe House"></a></div><div class="project-copy"><h3><a class="View Work" href="nashville-safe-house.html">Nashville Safe House</a></h3><p>Digital Content Manager</p><a href="nashville-safe-house.html">View↗</a></div></article>
-      <article class="project"><div class="art"><a href="aquarium-co-op.html" aria-label="View Aquarium Co-Op project"><img src="images/ACO-Logo.jpg" alt="Aquarium Co-Op"></a></div><div class="project-copy"><h3><a class="View Work" href="aquarium-co-op.html">Aquarium Co-Op</a></h3><p>Freelance Video Editor</p><a href="aquarium-co-op.html">View↗</a></div></article>
-      <article class="project"><div class="art"><a href="keeping-fish-simple.html" aria-label="View Keeping Fish Simple project"><img src="images/KFS-logo.jpg" alt="Keeping Fish Simple"></a></div><div class="project-copy"><h3><a class="View Work" href="keeping-fish-simple.html">Keeping Fish Simple</a></h3><p>Freenlance Video Editor</p><a href="keeping-fish-simple.html">View↗</a></div></article>
-    </div></div></section>
-    <section class="section" id="contact"><div class="wrap"><div class="contact"><div class="kicker">Have something in mind?</div><h2>Let’s Talk.</h2><div class="links"><a class="pill" href="mailto:gbrotan@gmail.com">gbrotan@gmail.com ↗</a><a class="pill" href="https://www.linkedin.com/in/grant-brotan/">LinkedIn ↗</a></div></div></div></section>
-  </main>
-  <footer class="wrap footer"><span>© 2026 Grant Brotan</span></footer>
+
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="#intro">GRANT BROTAN</a>
+    <nav class="top-links" aria-label="Main">
+      <a href="#simplihom">Work</a>
+      <a href="#contact">Contact</a>
+      <a class="top-resume" href="assets/Grant-Brotan-Resume-2026.pdf" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+    </nav>
+  </div>
+  <nav class="wrap" aria-label="Sections of this page">
+    <div class="strip-inner">
+      <a class="seg" href="#intro" aria-label="Intro"><span>Intro</span></a>
+      <a class="seg" href="#simplihom" aria-label="simpliHŌM Real Estate"><span>simpliHŌM</span></a>
+      <a class="seg" href="#safe-house" aria-label="Nashville Safe House"><span>Safe House</span></a>
+      <a class="seg" href="#aquarium-co-op" aria-label="Aquarium Co-Op"><span>Aquarium Co-Op</span></a>
+      <a class="seg" href="#keeping-fish-simple" aria-label="Keeping Fish Simple"><span>Keeping Fish Simple</span></a>
+      <a class="seg" href="#contact" aria-label="Contact"><span>Contact</span></a>
+      <span class="playhead" aria-hidden="true"></span>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero" id="intro">
+    <div class="wrap hero-grid">
+      <div class="hero-main">
+        <p class="kicker">Multimedia Specialist</p>
+        <h1>Making ideas<br>into reality.</h1>
+        <p class="lede">I'm a multimedia specialist with 10 years of experience in video editing, studio production, 3D animation, marketing, podcast production and digital content management.</p>
+        <ul class="skills" aria-label="Skills and specialties">
+          <li>Video Editing</li>
+          <li>Adobe Creative Suite</li>
+          <li>Shopify</li>
+          <li>Marketing</li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-primary" href="#simplihom">Watch the work ↓</a>
+          <a class="btn" href="#contact">Say hello</a>
+        </div>
+      </div>
+
+      <nav class="index" aria-label="Clients on this page">
+        <p class="index-label">On this page: 4 clients, 26 videos, ready to play</p>
+        <ul>
+          <li><a href="#simplihom"><img src="images/SH-logo.jpg" alt="" width="44" height="44"><span><span class="index-name">simpliHŌM Real Estate</span><span class="index-role">Marketing Manager</span></span><span class="index-count">8 videos</span></a></li>
+          <li><a href="#safe-house"><img src="images/NSH-Logo.jpg" alt="" width="44" height="44"><span><span class="index-name">Nashville Safe House</span><span class="index-role">Digital Content Manager</span></span><span class="index-count">6 videos + site</span></a></li>
+          <li><a href="#aquarium-co-op"><img src="images/ACO-Logo.jpg" alt="" width="44" height="44"><span><span class="index-name">Aquarium Co-Op</span><span class="index-role">Freelance Video Editor</span></span><span class="index-count">6 videos</span></a></li>
+          <li><a href="#keeping-fish-simple"><img src="images/KFS-logo.jpg" alt="" width="44" height="44"><span><span class="index-name">Keeping Fish Simple</span><span class="index-role">Freelance Video Editor</span></span><span class="index-count">6 of 20 videos</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <!--
+    THE WORK
+    Each client is one <section class="client">. Each video is one <li> in that client's
+    <ul class="queue">. The first <li> is the one cued in the big player.
+
+    To add or swap a video, copy an <li> and change three things:
+      1. data-yt="..."        the YouTube ID (the part after "v=" in the video's URL)
+      2. the same ID in the href and in the thumbnail src
+      3. the title text
+    Optional: add data-note="One line on what you did or what it achieved." to the <a>.
+    It shows under the title while that video is on screen.
+    Then update the "1 / 8" count and the queue label for that client.
+  -->
+  <div id="work">
+
+    <!-- ============ simpliHŌM ============ -->
+    <section class="client" id="simplihom">
+      <div class="wrap client-inner">
+        <header class="client-head">
+          <div class="client-id">
+            <img src="images/SH-logo.jpg" alt="simpliHŌM logo" width="60" height="60">
+            <div>
+              <p class="kicker">Marketing Manager</p>
+              <h2>simpliHŌM Real Estate</h2>
+            </div>
+          </div>
+          <div class="client-say">
+            <p class="client-blurb">Managed end-to-end production of recruitment, training and internal communication videos while maintaining brand consistency. Conducted video interviews and company podcasts to create engaging content that supported employee recruitment and retention efforts.</p>
+          </div>
+        </header>
+
+        <div class="deck">
+          <div class="stage">
+            <div class="screen">
+              <a class="poster" href="https://www.youtube.com/watch?v=C80F2SsHboY" target="_blank" rel="noopener noreferrer" aria-label="Play The Dream">
+                <img src="https://i.ytimg.com/vi/C80F2SsHboY/maxresdefault.jpg" alt="" width="1280" height="720">
+                <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg></span>
+              </a>
+            </div>
+            <div class="now">
+              <div class="now-text" aria-live="polite">
+                <p class="now-title"><span class="now-count">1 / 8</span><span class="now-name">The Dream</span></p>
+                <p class="now-note" hidden></p>
+              </div>
+              <div class="now-actions">
+                <button class="ctl" type="button" data-step="-1" aria-label="Previous video">←</button>
+                <button class="ctl" type="button" data-step="1" aria-label="Next video">→</button>
+                <a class="ctl now-link" href="https://www.youtube.com/watch?v=C80F2SsHboY" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="rail">
+            <div class="rail-inner">
+              <p class="rail-label">In the queue: 8 videos</p>
+              <ul class="queue">
+                <li><a class="clip" aria-current="true" data-yt="C80F2SsHboY" href="https://www.youtube.com/watch?v=C80F2SsHboY"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/C80F2SsHboY/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">The Dream</span></span></a></li>
+                <li><a class="clip" data-yt="hmehsQlhU90" href="https://www.youtube.com/watch?v=hmehsQlhU90"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/hmehsQlhU90/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">5 Years Reflection</span></span></a></li>
+                <li><a class="clip" data-yt="bn8dwSVSdic" href="https://www.youtube.com/watch?v=bn8dwSVSdic"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/bn8dwSVSdic/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">SH Podcast Intro</span></span></a></li>
+                <li><a class="clip" data-yt="WeOyHFrNMyU" href="https://www.youtube.com/watch?v=WeOyHFrNMyU"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/WeOyHFrNMyU/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">Elizabeth Taylor Spotlight</span></span></a></li>
+                <li><a class="clip" data-yt="nh5tGYi0l0E" href="https://www.youtube.com/watch?v=nh5tGYi0l0E"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/nh5tGYi0l0E/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">REcharge Intro</span></span></a></li>
+                <li><a class="clip" data-yt="4e8JVAbucLw" href="https://www.youtube.com/watch?v=4e8JVAbucLw"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/4e8JVAbucLw/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">Do you help people outside of Middle Tennessee?</span><span class="clip-sub">Real Estate Answers</span></span></a></li>
+                <li><a class="clip" data-yt="kuBbNl9A0Rs" href="https://www.youtube.com/watch?v=kuBbNl9A0Rs"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/kuBbNl9A0Rs/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">Michael Scott Buys a Condo</span><span class="clip-sub">Realtors React to The Office</span></span></a></li>
+                <li><a class="clip" data-yt="w28ORMy06QI" href="https://www.youtube.com/watch?v=w28ORMy06QI"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/w28ORMy06QI/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">Morgan Rd</span></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Nashville Safe House ============ -->
+    <section class="client" id="safe-house">
+      <div class="wrap client-inner">
+        <header class="client-head">
+          <div class="client-id">
+            <img src="images/NSH-Logo.jpg" alt="The Safe House logo" width="60" height="60">
+            <div>
+              <p class="kicker">Digital Content Manager</p>
+              <h2>Nashville Safe House</h2>
+            </div>
+          </div>
+          <div class="client-say">
+            <p class="client-blurb">Manage and update website content, ensuring accurate inventory listings, optimized landing pages, and timely promotional updates. Produce, film, and edit tutorial, promotional, and review videos for social media platforms.</p>
+          </div>
+        </header>
+
+        <div class="deck">
+          <div class="stage">
+            <div class="screen">
+              <a class="poster" href="https://www.youtube.com/watch?v=-4xqGRdbzmw" target="_blank" rel="noopener noreferrer" aria-label="Play We drop a Browning Safe from an 80 ton crane, does it survive?">
+                <img src="https://i.ytimg.com/vi/-4xqGRdbzmw/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy">
+                <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg></span>
+              </a>
+            </div>
+            <div class="now">
+              <div class="now-text" aria-live="polite">
+                <p class="now-title"><span class="now-count">1 / 6</span><span class="now-name">We drop a Browning Safe from an 80 ton crane, does it survive?</span></p>
+                <p class="now-note" hidden></p>
+              </div>
+              <div class="now-actions">
+                <button class="ctl" type="button" data-step="-1" aria-label="Previous video">←</button>
+                <button class="ctl" type="button" data-step="1" aria-label="Next video">→</button>
+                <a class="ctl now-link" href="https://www.youtube.com/watch?v=-4xqGRdbzmw" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="rail">
+            <div class="rail-inner">
+              <p class="rail-label">In the queue: 6 videos</p>
+              <ul class="queue">
+                <li><a class="clip" aria-current="true" data-yt="-4xqGRdbzmw" href="https://www.youtube.com/watch?v=-4xqGRdbzmw"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/-4xqGRdbzmw/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">We drop a Browning Safe from an 80 ton crane, does it survive?</span><span class="clip-sub">3:06</span></span></a></li>
+                <li><a class="clip" data-yt="HdnPrAo5QpU" href="https://www.youtube.com/watch?v=HdnPrAo5QpU"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/HdnPrAo5QpU/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">Changing ESL Lock Battery</span><span class="clip-sub">2:32</span></span></a></li>
+                <li><a class="clip" data-yt="8yn6BBBY2Eg" href="https://www.youtube.com/watch?v=8yn6BBBY2Eg"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/8yn6BBBY2Eg/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">What is a Safe Relocker? Fort Knox Safe, the Best Relocker System?</span><span class="clip-sub">1:53</span></span></a></li>
+                <li><a class="clip" data-yt="hcgjhyAR82Q" href="https://www.youtube.com/watch?v=hcgjhyAR82Q"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/hcgjhyAR82Q/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">How secure is a Secure It safe?</span><span class="clip-sub">1:24</span></span></a></li>
+                <li><a class="clip" data-yt="AQEOHcJj2ME" href="https://www.youtube.com/watch?v=AQEOHcJj2ME"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/AQEOHcJj2ME/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">Fort Knox His &amp; Hers Safe: Custom Swing-Out Door Modification</span><span class="clip-sub">1:14</span></span></a></li>
+                <li><a class="clip" data-yt="upWMZVj1eTk" href="https://www.youtube.com/watch?v=upWMZVj1eTk"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/upWMZVj1eTk/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">AMSEC BF Series Jewelry Safe: Custom High-Security Safe</span><span class="clip-sub">1:25</span></span></a></li>
+              </ul>
+              <p class="rail-foot"><a href="https://www.youtube.com/@Nashvillesafehouse" target="_blank" rel="noopener noreferrer">The full channel on YouTube ↗</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="extra">
+          <div class="extra-copy">
+            <p class="kicker">Also for The Safe House</p>
+            <h3>Website design</h3>
+            <p>thesafehouse.com: inventory listings, landing pages and promotional updates, kept accurate and current.</p>
+            <a class="btn" href="https://www.thesafehouse.com/" target="_blank" rel="noopener noreferrer">Visit the live site ↗</a>
+          </div>
+          <a class="browser" href="https://www.thesafehouse.com/" target="_blank" rel="noopener noreferrer" aria-label="Preview of thesafehouse.com. Opens the live site.">
+            <span class="browser-bar"><i></i><i></i><i></i><span>thesafehouse.com</span><span class="browser-hint">hover to scroll the page</span></span>
+            <span class="browser-view"><img src="images/nashville-safe-house-website.png" alt="Home page of thesafehouse.com: navy header, a Browning safes banner, and product listings below." width="1280" height="7074" loading="lazy"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Aquarium Co-Op ============ -->
+    <section class="client" id="aquarium-co-op">
+      <div class="wrap client-inner">
+        <header class="client-head">
+          <div class="client-id">
+            <img src="images/ACO-Logo.jpg" alt="Aquarium Co-Op logo" width="60" height="60">
+            <div>
+              <p class="kicker">Freelance Video Editor</p>
+              <h2>Aquarium Co-Op</h2>
+            </div>
+          </div>
+          <div class="client-say">
+            <p class="client-blurb">Edit and post weekly videos and daily social media reels that have generated over 4 million views. Manage, create and publish marketing content including promotional campaigns and product highlights to support brand visibility and audience engagement.</p>
+            <p class="stat"><b>4M+</b><span>views across weekly videos and daily reels</span></p>
+          </div>
+        </header>
+
+        <div class="deck">
+          <div class="stage">
+            <div class="screen">
+              <a class="poster" href="https://www.youtube.com/watch?v=bOjHM__X-8s" target="_blank" rel="noopener noreferrer" aria-label="Play Why Your Aquarium Plants Keep Dying (And How to Fix It)">
+                <img src="https://i.ytimg.com/vi/bOjHM__X-8s/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy">
+                <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg></span>
+              </a>
+            </div>
+            <div class="now">
+              <div class="now-text" aria-live="polite">
+                <p class="now-title"><span class="now-count">1 / 6</span><span class="now-name">Why Your Aquarium Plants Keep Dying (And How to Fix It)</span></p>
+                <p class="now-note" hidden></p>
+              </div>
+              <div class="now-actions">
+                <button class="ctl" type="button" data-step="-1" aria-label="Previous video">←</button>
+                <button class="ctl" type="button" data-step="1" aria-label="Next video">→</button>
+                <a class="ctl now-link" href="https://www.youtube.com/watch?v=bOjHM__X-8s" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="rail">
+            <div class="rail-inner">
+              <p class="rail-label">In the queue: 6 videos</p>
+              <ul class="queue">
+                <li><a class="clip" aria-current="true" data-yt="bOjHM__X-8s" href="https://www.youtube.com/watch?v=bOjHM__X-8s"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/bOjHM__X-8s/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">Why Your Aquarium Plants Keep Dying (And How to Fix It)</span><span class="clip-sub">12:34 · 83K views</span></span></a></li>
+                <li><a class="clip" data-yt="1ZsghWb49pU" href="https://www.youtube.com/watch?v=1ZsghWb49pU"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/1ZsghWb49pU/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">Installing an Undergravel Filter in an Existing Aquarium</span><span class="clip-sub">32:28 · 66K views</span></span></a></li>
+                <li><a class="clip" data-yt="B0CQycLNipg" href="https://www.youtube.com/watch?v=B0CQycLNipg"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/B0CQycLNipg/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">5 Years.. Then a LEAK!</span><span class="clip-sub">28:41 · 50K views</span></span></a></li>
+                <li><a class="clip" data-yt="A_yI32MUiBI" href="https://www.youtube.com/watch?v=A_yI32MUiBI"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/A_yI32MUiBI/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">The Only 3 Plant Combos You Need for a Lush Tank</span><span class="clip-sub">10:37 · 36K views</span></span></a></li>
+                <li><a class="clip" data-yt="o7Q6OYgV_H0" href="https://www.youtube.com/watch?v=o7Q6OYgV_H0"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/o7Q6OYgV_H0/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">How to Properly Gravel Vacuum a Planted Tank</span><span class="clip-sub">9:43 · 30K views</span></span></a></li>
+                <li><a class="clip" data-yt="eXRhH_gnwYU" href="https://www.youtube.com/watch?v=eXRhH_gnwYU"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/eXRhH_gnwYU/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">My Top 5 Centerpiece Fish for an Easy Planted Tank</span><span class="clip-sub">9:36 · 30K views</span></span></a></li>
+              </ul>
+              <p class="rail-foot"><a href="https://www.youtube.com/@AquariumCoop" target="_blank" rel="noopener noreferrer">The full channel on YouTube ↗</a><small>View counts as of November 2026</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Keeping Fish Simple ============ -->
+    <section class="client" id="keeping-fish-simple">
+      <div class="wrap client-inner">
+        <header class="client-head">
+          <div class="client-id">
+            <img src="images/KFS-logo.jpg" alt="Keeping Fish Simple logo" width="60" height="60">
+            <div>
+              <p class="kicker">Freelance Video Editor</p>
+              <h2>Keeping Fish Simple</h2>
+            </div>
+          </div>
+          <div class="client-say">
+            <p class="client-blurb">Served as the main video editor for Keeping Fish Simple, an Australian-based YouTube channel focused on aquarium and fishkeeping content. Edited videos for clear storytelling, strong pacing, and audience engagement, helping the channel share practical advice with aquarists.</p>
+            <p class="stat"><b>4.1M</b><span>views across the 20 videos in this playlist</span></p>
+          </div>
+        </header>
+
+        <div class="deck">
+          <div class="stage">
+            <div class="screen">
+              <a class="poster" href="https://www.youtube.com/watch?v=kbDzrVgFjV0" target="_blank" rel="noopener noreferrer" aria-label="Play 300+ Aquariums with NO FILTERS: In Depth Tour">
+                <img src="https://i.ytimg.com/vi/kbDzrVgFjV0/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy">
+                <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg></span>
+              </a>
+            </div>
+            <div class="now">
+              <div class="now-text" aria-live="polite">
+                <p class="now-title"><span class="now-count">1 / 6</span><span class="now-name">300+ Aquariums with NO FILTERS: In Depth Tour</span></p>
+                <p class="now-note" hidden></p>
+              </div>
+              <div class="now-actions">
+                <button class="ctl" type="button" data-step="-1" aria-label="Previous video">←</button>
+                <button class="ctl" type="button" data-step="1" aria-label="Next video">→</button>
+                <a class="ctl now-link" href="https://www.youtube.com/watch?v=kbDzrVgFjV0" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="rail">
+            <div class="rail-inner">
+              <p class="rail-label">In the queue: 6 of 20 videos</p>
+              <ul class="queue">
+                <li><a class="clip" aria-current="true" data-yt="kbDzrVgFjV0" href="https://www.youtube.com/watch?v=kbDzrVgFjV0"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/kbDzrVgFjV0/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">300+ Aquariums with NO FILTERS: In Depth Tour</span><span class="clip-sub">1:56:26 · 667K views</span></span></a></li>
+                <li><a class="clip" data-yt="jEpt20yHSqY" href="https://www.youtube.com/watch?v=jEpt20yHSqY"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/jEpt20yHSqY/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">Hobbyist Keeping Fish for 45 Years: Full Tour</span><span class="clip-sub">1:12:49 · 456K views</span></span></a></li>
+                <li><a class="clip" data-yt="c6G5U-QI2ZU" href="https://www.youtube.com/watch?v=c6G5U-QI2ZU"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/c6G5U-QI2ZU/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">Inside Master Breeder's Legendary Fish Room: Dean's Fish Room</span><span class="clip-sub">54:51 · 411K views</span></span></a></li>
+                <li><a class="clip" data-yt="w52835Kdf3I" href="https://www.youtube.com/watch?v=w52835Kdf3I"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/w52835Kdf3I/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">400+ Aquariums in this Shrimp Breeder's Home: In Depth Tour</span><span class="clip-sub">2:03:58 · 342K views</span></span></a></li>
+                <li><a class="clip" data-yt="3G0THpV7zj4" href="https://www.youtube.com/watch?v=3G0THpV7zj4"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/3G0THpV7zj4/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">Exclusive Fish Room Tour with Cory from Aquarium Co-Op!</span><span class="clip-sub">1:30:06 · 316K views</span></span></a></li>
+                <li><a class="clip" data-yt="iNsMG0t0P-U" href="https://www.youtube.com/watch?v=iNsMG0t0P-U"><span class="clip-thumb"><img src="https://i.ytimg.com/vi/iNsMG0t0P-U/mqdefault.jpg" alt="" width="320" height="180" loading="lazy"></span><span class="clip-text"><span class="clip-title">The Brutal Reality of Owning an Aquarium Store...</span><span class="clip-sub">37:25 · 314K views</span></span></a></li>
+              </ul>
+              <p class="rail-foot"><a href="https://youtube.com/playlist?list=PL3fHLgaKCjZqK7WkIqeIzC7EZPePqLk9p" target="_blank" rel="noopener noreferrer">All 20 edits on YouTube ↗</a><small>View counts as of November 2026</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-card">
+        <p class="kicker">Have something in mind?</p>
+        <h2>Let’s talk.</h2>
+        <div class="mail">
+          <a class="mail-addr" id="mail-addr" href="mailto:gbrotan@gmail.com">gbrotan@gmail.com</a>
+          <button class="btn" id="copy-mail" type="button">Copy address</button>
+        </div>
+        <div class="contact-links">
+          <a class="btn" href="https://www.linkedin.com/in/grant-brotan/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a class="btn" href="assets/Grant-Brotan-Resume-2026.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF) ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap footer">
+  <span>© 2026 Grant Brotan</span>
+  <a href="#intro">Back to top ↑</a>
+</footer>
+
+<script>
+(() => {
+  const root = document.documentElement;
+  const YT = 'https://www.youtube-nocookie.com';
+
+  /* ---- Lights: dim the page while the work is on screen ---- */
+  const work = document.getElementById('work');
+  const theme = document.querySelector('meta[name="theme-color"]');
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(([entry]) => {
+      root.dataset.lights = entry.isIntersecting ? 'down' : 'up';
+      theme.content = entry.isIntersecting ? '#111513' : '#f7f6f2';
+    }, { rootMargin: '-55% 0px -45% 0px' }).observe(work);
+  }
+
+  /* ---- Timeline strip: playhead follows the scroll position ---- */
+  const strip = document.querySelector('.strip-inner');
+  const segs = [...strip.querySelectorAll('.seg')];
+  const secs = segs.map(a => document.querySelector(a.getAttribute('href')));
+  let queued = false;
+  function place() {
+    queued = false;
+    const doc = root.scrollHeight, vh = innerHeight, max = doc - vh;
+    const t = max > 0 ? Math.min(1, Math.max(0, scrollY / max)) : 0;
+    const probe = scrollY + vh * t;            // slides from the top of the window to the bottom as you scroll
+    const tops = secs.map(s => s.getBoundingClientRect().top + scrollY);
+    let i = 0;
+    tops.forEach((y, n) => { if (y <= probe + 1) i = n; });
+    const end = i + 1 < tops.length ? tops[i + 1] : doc;
+    const p = Math.min(1, Math.max(0, (probe - tops[i]) / Math.max(1, end - tops[i])));
+    strip.style.setProperty('--p', ((i + p) / secs.length).toFixed(4));
+    segs.forEach((a, n) => {
+      if (n === i) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
+      a.classList.toggle('seen', n < i);
+    });
+  }
+  const schedule = () => { if (!queued) { queued = true; requestAnimationFrame(place); } };
+  addEventListener('scroll', schedule, { passive: true });
+  addEventListener('resize', schedule);
+  addEventListener('load', schedule);
+  place();
+
+  /* ---- Players: one real YouTube player per client, loaded before you reach it ---- */
+  document.querySelectorAll('.deck').forEach(deck => {
+    const screen = deck.querySelector('.screen');
+    const poster = deck.querySelector('.poster');
+    const posterImg = poster.querySelector('img');
+    const clips = [...deck.querySelectorAll('.clip')];
+    const count = deck.querySelector('.now-count');
+    const name = deck.querySelector('.now-name');
+    const note = deck.querySelector('.now-note');
+    const link = deck.querySelector('.now-link');
+    let current = 0, frame = null;
+
+    const titleOf = clip => clip.querySelector('.clip-title').textContent;
+
+    function mount(autoplay) {
+      const clip = clips[current];
+      const next = document.createElement('iframe');
+      const origin = location.protocol.startsWith('http') ? '&origin=' + encodeURIComponent(location.origin) : '';
+      next.src = `${YT}/embed/${clip.dataset.yt}?rel=0&playsinline=1&enablejsapi=1${origin}${autoplay ? '&autoplay=1' : ''}`;
+      next.title = titleOf(clip);
+      next.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      next.referrerPolicy = 'strict-origin-when-cross-origin';
+      next.allowFullscreen = true;
+      next.addEventListener('load', () => next.classList.add('ready'));
+      if (frame) frame.remove();               // a fresh iframe keeps the browser Back button clean
+      screen.appendChild(next);
+      frame = next;
+    }
+
+    function show(n, autoplay) {
+      current = (n + clips.length) % clips.length;
+      const clip = clips[current], id = clip.dataset.yt, title = titleOf(clip);
+      clips.forEach(c => c === clip ? c.setAttribute('aria-current', 'true') : c.removeAttribute('aria-current'));
+      count.textContent = `${current + 1} / ${clips.length}`;
+      name.textContent = title;
+      note.textContent = clip.dataset.note || '';
+      note.hidden = !clip.dataset.note;
+      link.href = poster.href = `https://www.youtube.com/watch?v=${id}`;
+      poster.setAttribute('aria-label', `Play ${title}`);
+      posterImg.src = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
+      mount(autoplay);
+      const box = screen.getBoundingClientRect();
+      if (box.top < 90 || box.bottom > innerHeight) {
+        screen.scrollIntoView({ block: 'center', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      }
+      clip.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    }
+
+    const plain = e => !(e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button);
+    clips.forEach((clip, n) => clip.addEventListener('click', e => { if (plain(e)) { e.preventDefault(); show(n, true); } }));
+    poster.addEventListener('click', e => { if (plain(e)) { e.preventDefault(); mount(true); } });
+    deck.querySelectorAll('[data-step]').forEach(b => b.addEventListener('click', () => show(current + Number(b.dataset.step), true)));
+
+    // Some older uploads have no full-size thumbnail; YouTube answers with a 120px placeholder.
+    posterImg.addEventListener('load', () => {
+      if (posterImg.naturalWidth <= 120 && !posterImg.src.includes('hqdefault')) {
+        posterImg.src = `https://i.ytimg.com/vi/${clips[current].dataset.yt}/hqdefault.jpg`;
+      }
+    });
+
+    // Fade the bottom of the queue while there is more to scroll.
+    const queue = deck.querySelector('.queue');
+    const fade = () => queue.classList.toggle('more', queue.scrollHeight - queue.scrollTop - queue.clientHeight > 4);
+    queue.addEventListener('scroll', fade, { passive: true });
+    addEventListener('resize', fade);
+    addEventListener('load', fade);
+    fade();
+
+    const first = clips[0];
+    if (first.dataset.note) { note.textContent = first.dataset.note; note.hidden = false; }
+
+    if ('IntersectionObserver' in window) {
+      // Cue the player one screen before it scrolls into view.
+      const cue = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) { cue.disconnect(); if (!frame) mount(false); }
+      }, { rootMargin: '100% 0px' });
+      cue.observe(screen);
+      // Pause when it scrolls away, so two clients never talk over each other.
+      new IntersectionObserver(([entry]) => {
+        if (!entry.isIntersecting && frame && frame.contentWindow) {
+          frame.contentWindow.postMessage(JSON.stringify({ event: 'command', func: 'pauseVideo', args: [] }), YT);
+        }
+      }).observe(screen);
+    } else {
+      mount(false);
+    }
+  });
+
+  /* ---- Copy the email address ---- */
+  const copy = document.getElementById('copy-mail');
+  const addr = document.getElementById('mail-addr');
+  copy.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(addr.textContent);
+      copy.textContent = 'Copied';
+    } catch {
+      getSelection().selectAllChildren(addr);
+      copy.textContent = 'Selected, press copy';
+    }
+    setTimeout(() => { copy.textContent = 'Copy address'; }, 2200);
+  });
+})();
+</script>
 </body>
 </html>
-
